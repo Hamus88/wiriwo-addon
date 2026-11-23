@@ -19,9 +19,9 @@ Am besten am Computer unter <https://login.tailscale.com/admin> anmelden:
 3. **Settings → Keys** → „Generate auth key…“ → *Reusable* aus, *Ephemeral* aus → „Generate“.
    Den Schlüssel (`tskey-auth-…`) kopieren. Er wird nur beim ersten Start gebraucht.
 
-## 2. Add-on installieren
+## 2. App (Add-on) installieren
 
-1. Home Assistant → **Einstellungen → Add-ons → Add-on-Store** → oben rechts ⋮ → **Repositories**.
+1. Home Assistant → **Einstellungen → Apps** → **App installieren** → oben rechts ⋮ → **Repositories**.
 2. Diese Adresse eintragen: `https://github.com/Hamus88/wiriwo-addon` → Hinzufügen.
 3. „Wiriwo“ erscheint im Store → **Installieren**.
 4. Reiter **Konfiguration**: Tailscale-Schlüssel eintragen, Gerätename `wiriwo` lassen → Speichern.

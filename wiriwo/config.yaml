@@ -1,5 +1,5 @@
 name: Wiriwo
-version: "2.0.0"
+version: "2.0.1"
 slug: wiriwo
 description: Familien-App für Aufgaben, Lernen, Coins und Belohnungen – läuft komplett auf deinem Home-Assistant-Rechner.
 url: https://github.com/Hamus88/wiriwo-addon
@@ -35,4 +35,4 @@ schema:
   smtp_port: port?
   smtp_user: str?
   smtp_password: password?
-  mail_from: email?
+  mail_from: str?
