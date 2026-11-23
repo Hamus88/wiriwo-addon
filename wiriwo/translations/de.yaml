@@ -1,0 +1,25 @@
+configuration:
+  tailscale_authkey:
+    name: Tailscale-Schlüssel
+    description: Einmal-Schlüssel aus der Tailscale-Verwaltung (Settings → Keys). Wird nur beim ersten Start gebraucht.
+  tailscale_hostname:
+    name: Gerätename im Tailscale-Netz
+    description: Bestimmt die Adresse der App, z. B. wiriwo → https://wiriwo.<netz>.ts.net. Später nicht mehr ändern (Face ID hängt daran).
+  public_access:
+    name: Von überall erreichbar (Funnel)
+    description: An = Kinder öffnen die App ohne Tailscale im Browser. Aus = nur Geräte im eigenen Tailscale-Netz.
+  allow_registration:
+    name: Freie Registrierung erlauben
+    description: Aus = neue Konten nur mit Einladung (empfohlen).
+  smtp_host:
+    name: Mailserver (SMTP)
+    description: Für Codes zum Zurücksetzen des Passworts, z. B. smtp.mail.me.com. Leer = Code steht im Add-on-Protokoll.
+  smtp_port:
+    name: SMTP-Port
+  smtp_user:
+    name: SMTP-Benutzer
+  smtp_password:
+    name: SMTP-Passwort
+    description: Bei iCloud ein app-spezifisches Passwort verwenden.
+  mail_from:
+    name: Absenderadresse

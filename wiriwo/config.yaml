@@ -1,0 +1,38 @@
+name: Wiriwo
+version: "2.0.0"
+slug: wiriwo
+description: Familien-App für Aufgaben, Lernen, Coins und Belohnungen – läuft komplett auf deinem Home-Assistant-Rechner.
+url: https://github.com/Hamus88/wiriwo-addon
+arch:
+  - amd64
+image: ghcr.io/hamus88/wiriwo-addon
+init: false
+startup: application
+boot: auto
+backup: cold
+map:
+  - share:ro
+ports:
+  3000/tcp: null
+ports_description:
+  3000/tcp: Nur für Notfälle im Heimnetz (normaler Zugriff über Tailscale)
+options:
+  tailscale_authkey: ""
+  tailscale_hostname: wiriwo
+  public_access: true
+  allow_registration: false
+  smtp_host: ""
+  smtp_port: 587
+  smtp_user: ""
+  smtp_password: ""
+  mail_from: ""
+schema:
+  tailscale_authkey: password?
+  tailscale_hostname: match(^[a-z0-9-]{1,40}$)
+  public_access: bool
+  allow_registration: bool
+  smtp_host: str?
+  smtp_port: port?
+  smtp_user: str?
+  smtp_password: password?
+  mail_from: email?
