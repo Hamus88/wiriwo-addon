@@ -39,6 +39,14 @@ Ohne Mail-Einstellungen steht der Code im Add-on-Protokoll. Mit iCloud:
 - Passwort: ein **app-spezifisches Passwort** (appleid.apple.com → Anmeldung & Sicherheit)
 - Absender: deine iCloud-Adresse
 
+## 4. Familienkalender (optional)
+
+In Wiriwo unter **Mehr → Kalender**. Für iCloud brauchst du ein app-spezifisches Passwort:
+account.apple.com → Anmelden und Sicherheit → App-spezifische Passwörter → „+“.
+Wiriwo liest den Kalender nur. Steht ein Kindername im Termin („Philipp Fußball“),
+erscheint der Termin in der Spalte des Kindes, sonst gilt er für die ganze Familie.
+Das Passwort liegt in der Wiriwo-Datenbank und damit auch in den Backups.
+
 ## Sicherheit
 
 - Nur die App ist im Internet erreichbar, Home Assistant selbst bleibt privat.
